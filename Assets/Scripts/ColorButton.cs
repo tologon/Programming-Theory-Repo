@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+// INHERITANCE
 public class ColorButton : SimpleButton
 {
+    // ENCAPSULATION
     [SerializeField] private Button _button;
 
     private Color[] _colors;
@@ -16,6 +18,8 @@ public class ColorButton : SimpleButton
         };
     }
 
+    // POLYMORPHISM
+    // ABSTRACTION
     public override void Action()
     {
         if (_button == null)
